@@ -18,6 +18,10 @@ for i in soup.select('#lst50 > td:nth-child(6) > div > div > div.ellipsis.rank01
     name.append(i.text)
 for i in soup.select('#lst50 > td:nth-child(6) > div > div > div.ellipsis.rank02 > a'): #css selector 사용
     s.append(i.text)
+for i in soup.select('#lst100 > td:nth-child(6) > div > div > div.ellipsis.rank01 > span > a'): #css selector 사용
+    name.append(i.text)
+for i in soup.select('#lst100 > td:nth-child(6) > div > div > div.ellipsis.rank02 > a'): #css selector 사용
+    s.append(i.text)
 
 for i,j in zip(name,s):
     if p.search(j):
